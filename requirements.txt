@@ -1,7 +1,6 @@
-streamlit
-numpy
-plotly
-sympy
-pillow
-pytesseract
+streamlit>=1.40
+numpy>=1.26
+plotly>=5.20
+sympy>=1.12
+pillow>=10.0
 google-genai

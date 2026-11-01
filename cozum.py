@@ -27,9 +27,9 @@ IZINLI = {"pi": sp.pi, "e": sp.E, "x": x, "sqrt": sp.sqrt, "sin": sp.sin, "cos":
 
 
 def ifade_oku(metin):
-    """'x^2+1' gibi yazıyı sympy ifadesine çevirir."""
-    metin = metin.replace("π", "pi").replace("²", "^2").replace("³", "^3")
-    return parse_expr(metin, local_dict=IZINLI, transformations=DONUSUM)
+    """Guvenli, yalnizca izinli islemlere acik matematik ifadesi."""
+    from matematik_motoru import ifade
+    return ifade(metin)
 
 
 def sayi_oku(metin):
